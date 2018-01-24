@@ -1,0 +1,103 @@
+/**************************************************
+NAVIGATION BAR
+**************************************************/
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #4aaaa5;
+    color: #fff;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+}
+
+.navbar-brand {
+    float: left;
+    min-height: 50px;
+    padding: 5px 20px;
+}
+
+.navbar-inverse .navbar-nav .active a,
+.navbar-inverse .navbar-nav .active a:focus,
+.navbar-inverse .navbar-nav .active a:hover {
+    color: #246e6b;
+    background-color: #4aaaa5;
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: #e7e7e7;
+}
+
+/**************************************************
+JUMBOTRON
+**************************************************/
+
+.jumbotron {
+    background-image: url("../images/jumbotron-img.jpg");
+    padding: 10% 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #4aaaa5;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #246e6b;
+}
+
+.jumbotron h2 {
+    font-size: 50px;
+}
+
+.jumbotron p {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/**************************************************
+ABOUT ME
+**************************************************/
+
+.about-me {
+    margin-top: 50px;
+}
+
+.img-responsive {
+    padding-top: 10px;
+}
+
+/**************************************************
+CONNECT WITH ME
+**************************************************/
+
+.fa {
+    padding: 15px;
+    font-size: 100px;
+    color: #000;
+}
+
+.fa:hover {
+    color: #4aaaa5;
+    text-decoration: none;
+}
+
+.text-center {
+    margin-top: 30px;
+}
+
+/**************************************************
+FOOTER
+**************************************************/
+
+footer {
+    width: 100%;
+    background-color: #4aaaa5;
+    padding: 5% 0 2% 0;
+    color: #fff;
+}
