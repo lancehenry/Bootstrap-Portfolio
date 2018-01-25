@@ -1,3 +1,13 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom same as footer height */
+    margin-bottom: 100px;
+}
+
 /**************************************************
 NAVIGATION BAR
 **************************************************/
@@ -6,7 +16,6 @@ NAVIGATION BAR
     margin-bottom: 0;
     border-radius: 0;
     background-color: #4aaaa5;
-    color: #fff;
     padding: 1% 0;
     font-size: 1.2em;
     border: 0;
@@ -21,12 +30,21 @@ NAVIGATION BAR
 .navbar-inverse .navbar-nav .active a,
 .navbar-inverse .navbar-nav .active a:focus,
 .navbar-inverse .navbar-nav .active a:hover {
-    color: #246e6b;
+    color: #e7e7e7;
     background-color: #4aaaa5;
 }
 
 .navbar-inverse .navbar-nav li a {
     color: #e7e7e7;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: #246e6b;
+}
+
+.navbar-inverse .navbar-toggle:focus,
+.navbar-inverse .navbar-toggle:hover {
+    background-color: #246e6b;
 }
 
 /**************************************************
@@ -65,11 +83,19 @@ ABOUT ME
 **************************************************/
 
 .about-me {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .img-responsive {
-    padding-top: 10px;
+    padding-top: 5px;
+}
+
+.page-header {
+    margin-top: 30px;
+}
+
+.aboutme-title {
+    margin-top: 0;
 }
 
 /**************************************************
@@ -88,16 +114,98 @@ CONNECT WITH ME
 }
 
 .text-center {
-    margin-top: 30px;
+    margin-top: 60px;
+}
+
+/**************************************************
+PORTFOLIO
+**************************************************/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #4aaaa5;
+}
+
+/**************************************************
+PADDING FOR THE LOWEST ROW TO PUSH AWAY FOOTER
+**************************************************/
+
+.padding-btm-row {
+    margin-bottom: 60px;
 }
 
 /**************************************************
 FOOTER
 **************************************************/
 
-footer {
+.footer {
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    /* The fixed height of the footer */
+    height: 100px;
     background-color: #4aaaa5;
-    padding: 5% 0 2% 0;
+    text-align: center;
     color: #fff;
+}
+
+.by-line {
+    color: #fff;
+    margin-top: 60px;
+}
+
+/**************************************************
+MEDIA QUERIES
+**************************************************/
+
+@media only screen and (max-width: 990px) {
+    
+    .page-header {
+        margin-top: 30px;
+    }
+
+    .left-icons {
+        padding-left: 200px;
+    }
+
+    .right-icons {
+        padding-right: 200px;
+    }
+
+    .row-2 {
+        clear: both;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .about-me {
+        margin-top: 50px;
+    }
+
+    .left-icons {
+        padding: 0;
+    }
+
+    .right-icons {
+        padding: 0;
+    }
+
+    .text-center {
+        margin-top: 10px;
+    }
+    
+    .jumbotron h2 {
+        font-size: 30px;
+    }
+    
+    .jumbotron p {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
 }
